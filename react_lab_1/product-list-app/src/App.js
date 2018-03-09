@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import ProductGrid from './components/productGrid';
+import inventory, {categories} from './products';
 import './App.css';
 
-import myComponent from './myComponent';
-
 console.log(categories);
-console.log(inventory);
+console.log(products);
 
 class App extends Component {
     render() {
         return ( <div className = "App" >
-            <h1 > Showing inventory of products </h1> </div>
+                    <ProductGrid products={products} categories={categories} />
+                </div>
         );
     }
 }
