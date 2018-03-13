@@ -1004,7 +1004,7 @@ var inventory = [{"id":1,"name":"Duobam","description":"Implemented even-keeled 
 inventory = _.uniqBy(inventory, 'name')
 inventory = _.sortBy(inventory, 'category')
 var c = inventory.map((item) => {
-  return item.category
+  return item.category;
 })
 
 export var categories = _.uniq(c)
